@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+    <meta charset="utf8">
+</head>
+
+<style>
+    
+    fieldset {
+        background-color: lightyellow;
+        border: solid yellow  10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        width: 720px;
+    }
+    
+    label {
+        width: 180px;
+        text-align: right;
+        display: inline-block;
+    }
+    
+    textarea{
+        width:360px;
+        height: 50px;
+    }
+    
+    
+    
+</style>
+<body>
+	<h2>Please Enter Your Details For Our Website !</h2>
+	<form >
+		<fieldset>
+			<legend>Your General Details</legend>
+			<label for="name">Name :</label>
+			<input type="text" id="name" name="name">
+			<br>
+			<label>Gender :</label>
+			<input type="radio" id="gender_m" name="gender" value="m" >
+			<label for="gender_m">Male</label>
+			<input type="radio" id="gender_f" name="gender" value="f" >
+			<label for="gneder_f">Female</label>
+			<br>
+			<label for="age" maxlength="3">Age :</label>
+			<input type="number" id="age" name="age" min="1" max="120" step="1">
+			<br>
+			<label for="date">Date of birth :</label>
+			<input type="date" id="date" name="date">
+			<br>
+			<label for="color">Favorite :</label>
+			<input type="color" id="color" name="color">
+			<br>
+			<label for="country">Which country :</label>
+			<select id="country" name="country">
+				<option value="en">EN</option>
+				<option value="th">TH</option>
+			</select>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Indicators</legend>
+            <div>
+                <label>Height :</label>
+                <span>Short</span>
+                <input type="range" min="0" max="100">
+                <span>Tall</span>
+            </div>
+            <div>
+                <label>Salary :</label>
+                <span>Poor</span>
+                <input type="range" min="0" max="100">
+                <span>Rich</span>
+            </div>
+		</fieldset>
+        
+        
+        <fieldset>
+            <legend>Your Cotact Information</legend>
+            <div>
+                <label>Email :</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Mobile :</label>
+                <input type="tel">
+            </div>
+            <div>
+                <label for="ttextarea_addresse">Address :</label>
+                <textarea id="textarea_address"  cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Method to contact you :</label>
+                <input type="checkbox" id="chk_email">
+                <span for="chk_email">Email</span>
+                <input type="checkbox" id="chk_whatapp">
+                <span for="chk_whatapp">WhatApp</span>
+                <input type="checkbox" id="chk_inappchat">
+                <span for="chk_inappchat">In-app chat</span>
+            </div>
+        </fieldset>
+        
+        <input type="submit">
+	</form>
+
+
+</body>
+</html>
